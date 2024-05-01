@@ -8,10 +8,12 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { MainComponent } from './main/main.component';
 import { TopWidgetsComponent } from './top-widgets/top-widgets.component';
 import { SalesByMonthComponent } from './sales-by-month/sales-by-month.component';
-import { SalesByCetegoryComponent } from './sales-by-cetegory/sales-by-cetegory.component';
-import { LastFewTransactionComponent } from './last-few-transaction/last-few-transaction.component';
+import { SalesByCategoryComponent } from './sales-by-category/sales-by-category.component';
 import { TopThreeProductsComponent } from './top-three-products/top-three-products.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HighchartsChartModule } from 'highcharts-angular';
+import { LastFewTransactionsComponent } from './last-few-transactions/last-few-transactions.component';
+import { CreateButtonComponent } from './header/create-button/create-button.component';
 
 @NgModule({
   declarations: [
@@ -21,16 +23,22 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MainComponent,
     TopWidgetsComponent,
     SalesByMonthComponent,
-    SalesByCetegoryComponent,
-    LastFewTransactionComponent,
-    TopThreeProductsComponent
+    SalesByCategoryComponent,
+    TopThreeProductsComponent,
+    LastFewTransactionsComponent,
+    CreateButtonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HighchartsChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
+
+  
+
+
 })
 export class AppModule { }
